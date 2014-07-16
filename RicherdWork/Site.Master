@@ -1,0 +1,131 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="RicherdWork.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+<body>
+    <div class="container">
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="respond" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+
+        <div class="row">
+            <div class="col-xs-6 col-md-6">
+                <img src="public/images/top01-small.gif" />
+            </div>
+            <div class="col-xs-6 col-md-6 ">
+                <div class="pull-right login-container">
+                    Welcome 
+            ACCOUNT TEST!
+                </div>
+            </div>
+
+        </div>
+
+        <div class="navbar-container">
+            <div class="row">
+                <div class="col-xs-4 col-md-4">
+
+                    <ul class="nav nav-pills">
+                        <li class=""><a href="#">Home  </a></li>
+                        <li><a href="#">Tarbell Affiliates  </a></li>
+                        <li><a href="#">Design Gallery  </a></li>
+                        <li><a href="#">Logout  </a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-2 col-md-2 "></div>
+                <div class="col-xs-6 col-md-6 ">
+                    <div class="form-inline pull-right" role="form">
+
+                        <div class="form-group">
+
+                            <select class="">
+                                <option selected="" value="0">All 
+                    Categories</option>
+                                <option value="18">Bi-Fold</option>
+                                <option value="4">Bookmark</option>
+                                <option value="2">Business 
+                    Card</option>
+                                <option value="10">Door Hanger</option>
+                                <option value="6">Flyer</option>
+                                <option value="8">Greeting 
+                    Card</option>
+                                <option value="13">Guide</option>
+                                <option value="17">Label</option>
+                                <option value="3">Mini Marketing 
+                    Card</option>
+                                <option value="1">Postcard</option>
+                                <option value="12">Tri-Fold Brochure</option>
+                            </select>
+
+                        </div>
+                        <div class="form-group">
+
+                            <input type="search" class="" id="exampleInputPassword2" placeholder="Search">
+                        </div>
+                        <input id="" class="submit" type="submit" value="Search" >
+                    </div>
+
+                </div>
+            </div>
+          
+        </div>
+          <div class="row">
+                <div class="col-xs- col-md-3"> <input id="" class="submit btn-block" type="submit" value="Search" ></div>
+                <div class="col-xs- col-md-3">  <div class="form-group">
+
+                            <input type="search" class="form-control"  placeholder="Search">
+                        </div></div>
+               
+              <div class="col-xs-3 col-md-3 ">
+                 
+
+                </div>
+                <div class="col-xs-3 col-md-3 ">
+                    <input  class="btn-block cancle" type="submit" value="Exit" >
+
+                </div>
+            </div>
+        <div class=" body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+            </footer>
+        </div>
+    </form>
+        </div>
+</body>
+</html>

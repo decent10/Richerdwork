@@ -1,0 +1,146 @@
+﻿.container {
+    max-width: 100%;
+}
+
+.login-container {
+    padding-top: 5px;
+    margin-right: 10px;
+}
+
+.navbar-container {
+    margin: 10px 5px 30px 5px;
+}
+
+    .navbar-container .nav-pills > li > a {
+        font-size: 9pt;
+        color: black;
+        font-family: Verdana, Arial, Tahoma, sans-serif;
+        background-color: whitesmoke;
+        text-decoration: none;
+        border-radius: 0px;
+    }
+
+input, button, select, textarea {
+    padding: 1px;
+}
+
+.navbar-container .nav > li > a {
+    position: relative;
+    display: block;
+    padding: 5px 14px;
+}
+
+.navbar-container .nav-pills > li + li {
+    margin-left: 0;
+    border-left: solid 2px rgba(44, 44, 44, 0.5);
+}
+
+.navbar-container select {
+    padding: 3px;
+}
+
+.navbar-container .form-inline .form-group {
+    margin-left: 5px;
+}
+
+.submit {
+    font-size: 9pt;
+    background-color: #669999;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    padding: 4px 9px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 25px;
+    padding: 3px 10px;
+    line-height: 1.428571429;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0;
+}
+
+.cancle {
+    font-size: 9pt;
+    vertical-align: top;
+    background-color: #6699ff;
+    text-align: center;
+    border: 1px;
+    cursor: pointer;
+    color: White;
+    width: 100%;
+    padding: 4px 9px;
+}
+
+.body-content {
+    margin: 5px;
+}
+
+.table-container {
+    margin-top: 0px;
+}
+
+.input-block {
+    display: block;
+    width: 100%;
+}
+
+.table-condensed thead > tr > th, .table-condensed tbody > tr > th, .table-condensed tfoot > tr > th, .table-condensed thead > tr > td, .table-condensed tbody > tr > td, .table-condensed tfoot > tr > td {
+    padding: 1px;
+    vertical-align: middle;
+    border-top: none;
+}
+
+.DataGrid_PagerStyle, .DataGrid_PagerStyle td {
+    text-align: right;
+}
+
+    .DataGrid_PagerStyle a {
+        color: White;
+        font-weight: normal;
+    }
+
+    .DataGrid_PagerStyle, .DataGrid_PagerStyle td {
+        text-align: right !important;
+    }
+
+.table-row-top {
+    border-top: solid 3px #f0f0ff;
+}
+
+.table-row-bottom {
+    border-bottom: solid 3px #f0f0ff;
+}
+
+hr {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.td-gray {
+    background-color: whitesmoke !important;
+}
+
+.page-header {
+    padding-bottom: 9px;
+    margin: 17px 0 0px;
+    border-bottom: none;
+}
+
+.text-red {
+    margin-bottom: 4px;
+    font-size: 10pt;
+    color: red;
+}
+
+.table tr td a {
+    color: #fff !important;
+}
